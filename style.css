@@ -3356,6 +3356,7 @@ div.add_email_checked::after {
     .service_category-item_category {
         margin: 0;
         margin-bottom: 3px;
+        margin-left: auto;
     }
     .service_category-item_name {
         font-size: 10px;
