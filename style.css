@@ -3940,6 +3940,7 @@ div.add_email_checked::after {
     }
     .main_list-item_bottom {
         overflow: hidden;
+        align-items: center;
     }
     .service_category_list_Info {
         margin: 0;
