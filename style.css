@@ -503,6 +503,11 @@ header {
     cursor: pointer;
 }
 
+#search button span {
+    position: relative;
+    top: -1px;
+}
+
 #search button:hover {
     background-color: rgb(163, 5, 48);
 }
@@ -1708,6 +1713,11 @@ main {
     height: 32px;
     width: 32px;
     cursor: pointer;
+}
+
+.main_search button span {
+    position: relative;
+    top: -1px;
 }
 
 .main_search button:hover {
@@ -3294,6 +3304,25 @@ div.add_email_checked::after {
 }
 
 @media (max-width:990px) {
+    .service_main_slide a {
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 72px;
+        border-width: 0px;
+        border-color: rgb(0, 0, 0);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        letter-spacing: 0px;
+        -webkit-border-radius: 72px;
+        -moz-border-radius: 72px;
+        -ms-border-radius: 72px;
+        -o-border-radius: 72px;
+        position: relative;
+        cursor: default;
+        text-decoration: none;
+    }
     .single_RESPECTS_lists .slick-slide {
         margin: 0 5px;
     }
@@ -3858,6 +3887,8 @@ div.add_email_checked::after {
     .SPACE_mobile,
     .DIGITAL_mobile,
     .PR_mobile {
+        will-change: transform;
+        transform: translate3d(0px, 0px, 0px);
         display: block;
         text-align: left;
         background-color: rgba(25, 25, 25, 0.6);

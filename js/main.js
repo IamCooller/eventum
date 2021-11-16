@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-
     /*loadSvg*/
     $('[data-svg]').each(function() {
         var $this = $(this);
@@ -69,41 +66,51 @@ $(document).ready(function() {
 
             ]
         });
-        var EVENTmobile = document.getElementsByClassName('EVENT_mobile');
-        var ONLINE_mobile = document.getElementsByClassName('ONLINE_mobile');
-        var SPACE_mobile = document.getElementsByClassName('SPACE_mobile');
-        var DIGITAL_mobile = document.getElementsByClassName('DIGITAL_mobile');
-        var PR_mobile = document.getElementsByClassName('PR_mobile');
-        new simpleParallax(EVENTmobile, {
-            overflow: true,
-            scale: 5,
-            orientation: 'right',
-            maxTransition: 50,
 
+        $('.EVENT span').html('<a href="#EVENT_mobile"> EVENT</a>')
+        $('.ONLINE span').html('<a href="#ONLINE_mobile"> ONLINE</a>')
+        $('.SPACE span').html('<a href="#SPACE_mobile"> SPACE</a>')
+        $('.DIGITAL span').html('<a href="#DIGITAL_mobile"> DIGITAL</a>')
+        $('.PR span').html('<a href="#PR_mobile"> PR</a>')
+        $('.EVENT a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this.hash);
+            $('html, body').stop().animate({
+                'scrollTop': target.offset().top
+            }, 500);
         });
-        new simpleParallax(ONLINE_mobile, {
-            overflow: true,
-            scale: 5,
-            orientation: 'left',
-            maxTransition: 50
+        $('.ONLINE a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this.hash);
+            $('html, body').stop().animate({
+                'scrollTop': target.offset().top
+            }, 500);
         });
-        new simpleParallax(SPACE_mobile, {
-            overflow: true,
-            scale: 5,
-            orientation: 'right',
-            maxTransition: 50
+        $('.SPACE a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this.hash);
+            $('html, body').stop().animate({
+                'scrollTop': target.offset().top
+            }, 500);
         });
-        new simpleParallax(DIGITAL_mobile, {
-            overflow: true,
-            scale: 5,
-            orientation: 'left',
-            maxTransition: 50
+        $('.DIGITAL a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this.hash);
+            $('html, body').stop().animate({
+                'scrollTop': target.offset().top
+            }, 500);
         });
-        new simpleParallax(PR_mobile, {
-            overflow: true,
-            scale: 5,
-            orientation: 'right',
-            maxTransition: 50
+        $('.PR a').on('click', function(e) {
+            e.preventDefault();
+
+            var target = $(this.hash);
+            $('html, body').stop().animate({
+                'scrollTop': target.offset().top
+            }, 500);
         });
     }
 
@@ -193,3 +200,24 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function() {
+    var toright = document.getElementsByClassName('toRight');
+    var toleft = document.getElementsByClassName('toLeft');
+
+    new simpleParallax(toright, {
+        overflow: true,
+        scale: 2,
+        orientation: 'right',
+        maxTransition: 50,
+
+    });
+    new simpleParallax(toleft, {
+        overflow: true,
+        scale: 2,
+        orientation: 'left',
+        maxTransition: 50,
+
+    });
+
+})

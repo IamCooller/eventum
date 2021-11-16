@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="js/simpleParallax.min.js"></script>
+    <script src="js/slick.js"></script>
 
     <title>eventum</title>
 </head>
@@ -94,7 +96,7 @@
 
             <div id="search">
                 <input type="text" placeholder="Поиск" />
-                <button>→</button>
+                <button><span>→</span></button>
             </div>
         </div>
     </header>
@@ -102,7 +104,7 @@
     <main>
         <section class="service_main">
             <div class="service_main_slide EVENT">
-                <span>EVENT</span>
+                <span> EVENT</span>
                 <p>
                     В организации мероприятий мы любим сложные <br />задачи, которые требуют свежего креатива и продуманной логистики. Мы специализируемся на мероприятиях различного формата и масштаба в онлайн и оффлайн.
                 </p>
@@ -150,25 +152,25 @@
         <div class="service_main_bg">
           <img src="img/cloud_услуги2.png" />
         </div>
-        <div class="EVENT_mobile">
+        <div class="EVENT_mobile toRight" id="EVENT_mobile">
             <span>EVENT</span>
             <p>
                 В организации мероприятий мы любим сложные <br />задачи, которые требуют свежего креатива и продуманной логистики. Мы специализируемся на мероприятиях различного формата и масштаба в онлайн и оффлайн.
             </p>
         </div>
-        <div class="ONLINE_mobile">
+        <div class="ONLINE_mobile toLeft" id="ONLINE_mobile">
             <span>ONLINE</span>
             <p>
                 Проведение онлайн-мероприятий для больших охватов. Презентации, конференции и лончи. Отличная техническая и контент-команда, режиссура, сервисы для регистрация участников и подробная аналитика.
             </p>
         </div>
-        <div class="SPACE_mobile">
+        <div class="SPACE_mobile toRight" id="SPACE_mobile">
             <span>SPACE</span>
             <p>
                 Пространственные коммуникации, погружающие потребителя в мир бренда — актуальное направление современного маркетинга и коммуникаций. Возможность представить ценности, эстетику бренда и сам продукт через различные, материалы, контент и активности.
             </p>
         </div>
-        <div class="DIGITAL_mobile">
+        <div class="DIGITAL_mobile toLeft" id="DIGITAL_mobile">
             <span>DIGITAL</span>
             <p>
                 Deep – креативное digital-агентство, которое выросло из digital-направления Eventum Premo в отдельную боевую единицу. Наша команда запустила успешные кампании с такими брендами как: S7 Airlines, Mercedes-Benz, Asics, Acer, МКБ, Kaspersky, Калашников и
@@ -177,7 +179,7 @@
         >
       </p>
         </div>
-        <div class="PR_mobile">
+        <div class="PR_mobile toRight" id="PR_mobile">
             <span>PR</span>
             <p>
                 Если нужно продвигать имидж компании, наладить контакты со СМИ,
@@ -395,7 +397,7 @@
         </section>
         <section class="main_search">
             <input type="text" placeholder="Поиск" />
-            <button>→</button>
+            <button><span>→</span></button>
         </section>
         <section class="main_socials">
             <ul>
@@ -489,9 +491,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
+
 </body>
-<script src="js/simpleParallax.min.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/main.js"></script>
+
 
 </html>
