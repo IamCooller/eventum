@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/simpleParallax.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>eventum</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html" data-svg="img/logo.svg"></a>
+        </div>
+        <ul class="header__menu">
+            <li><a href="">О нас</a></li>
+            <li><a href="/service.html">Услуги</a></li>
+            <li><a href="">Бриф</a></li>
+            <li><a href="">Проекты</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+
+        <div class="header__music" data-svg="img/sound_icon.svg"></div>
+        <div class="header__mainMenu">
+            <button id="header__mainMenu-open" data-svg="img/burger_icon.svg"></button>
+        </div>
+        <div class="rmwidget"></div>
+        <div id="header__mainMenu-toggle">
+            <div class="header__mainMenu-toggle_top">
+                <div class="header__mainMenu-toggle_left">
+                    <ul>
+                        <li>
+                            <a href="">О нас <span style="color: rgba(163, 5, 48, 1)">v</span></a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="/service.html"
+                  >Услуги <span style="color: rgba(163, 5, 48, 1)">v</span></a
+                >
+              </li>
+              <li><a href="#">Online </a></li>
+                        <li><a href="#">Event </a></li>
+                        <li><a href="#">Space </a></li>
+                        <li><a href="#">Pr </a></li>
+                        <li><a href="#">Digital </a></li>
+                    </ul>
+                </div>
+                <div class="header__mainMenu-toggle_right">
+                    <ul>
+                        <li>
+                            <a href="#"><span style="font-weight: 400; font-style: normal"
+                    >Войти </span
+                  >→</a
+                >
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="#">Vimeo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__mainMenu-toggle_bottom">
+                <div class="header__mainMenu-toggle_bottom-left">
+                    <a href="#">Проекты</a>
+                    <a href="#">Бриф</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="header__mainMenu-toggle_bottom-right">
+                    <a href="#" class="active">Ru </a>
+                    <a href="#">En </a>
+                    <a href="#">Zh</a>
+                </div>
+            </div>
+
+            <div id="search">
+                <input type="text" placeholder="Поиск" />
+                <button>→</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breef_form">
+            <div class="breef_form_top">
+                <div class="breef_title">
+                    ДАВАЙТЕ СДЕЛАЕМ
+                    <br> ПРОЕКТ ВМЕСТЕ
+                </div>
+                <span data-svg="img/heart.svg"></span>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Имя" required>
+                    <span class="required">*</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Должность">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Компания" required>
+                    <span class="required">*</span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон" required>
+                    <span class="required">*</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="E-mail" required>
+                    <span class="required">*</span>
+                </div>
+
+                <textarea rows="4" placeholder="Расскажите нам о вашем проекте"></textarea>
+
+                <div class="form_file">
+                    <a id="chose_file" href="#"><img src="img/file.png"> Прикрепить файл</a>
+                    <span id="chose_file_text"></span>
+                    <input id="chose_file_input" name="imagefile" type="file" /></div>
+                <div class="form_bottom">
+                    <div class="checbox">
+                        <div id="add_email"></div>
+                        <span>Соглашаюсь на обработку персональных данных</span>
+                        <input id="add_email_checkbox" name="addemail" type="checkbox" />
+                    </div>
+
+
+                    <button>Отправить</button>
+                </div>
+
+            </form>
+        </section>
+        <section class="main_STRESS">
+
+
+            <div class="main_STRESS_center">
+                <span class="main_STRESS-eye" data-svg="img/ep_old.svg"></span>
+                <span class="main_STRESS-smile" data-svg="img/SMILE.svg"></span>
+            </div>
+
+        </section>
+        <section class="main_search">
+            <input type="text" placeholder="Поиск" />
+            <button>→</button>
+        </section>
+        <section class="main_socials">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+
+                <li><a href="#">Instagram</a></li>
+
+                <li><a href="#">Vimeo</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Behance</a></li>
+
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="/service.html">УСЛУГИ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul>
+                    <li><a href="#">Online event</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Space</a></li>
+                    <li><a href="#">Pr</a></li>
+                    <li><a href="#">Digital</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="#">КОМПАНИЯ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul>
+                    <li><a href="#">Миссия</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">HR</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Музыка</a></li>
+                    <li><a href="#">Тесты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Мерч</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Бриф</a></li>
+                    <li><a href="#">Фрилансерам</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="#">КОНТАКТЫ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul class="footer_contacts">
+                    <li>
+                        <span>EMAIL</span>
+                        <a href="mailto:go@eventum-premo.ru">go@eventum-premo.ru</a>
+                    </li>
+                    <li>
+                        <span>WHATSAPP, TELEGRAM</span>
+                        <a href="tel:+7 495 785 8446">+7 495 785 8446</a>
+                    </li>
+                    <li>
+                        <span>PHONE </span>
+                        <a href="tel:+7 495 785 8446">+7 495 785 8446</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col footer_dats">
+            <span>2003</span>
+            <div class="footer_dats-glob">
+                EVENTUM PREMO <br /> MOSCOW <br /> ©
+                <span data-svg="img/world.svg"></span>
+            </div>
+            <span>2021</span>
+        </div>
+        <div class="global_status">
+            <div class="global_status_arrow">
+                >
+            </div>
+            <div class="global_status_main">
+                <p>7 Projects</p>
+                <span>In progress</span>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+
+</html>

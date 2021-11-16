@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>eventum</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html" data-svg="img/logo.svg"></a>
+        </div>
+        <ul class="header__menu">
+            <li><a href="">О нас</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="/breef.html">Бриф</a></li>
+            <li><a href="">Проекты</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+
+        <div class="header__music" data-svg="img/sound_icon.svg"></div>
+        <div class="header__mainMenu">
+            <button id="header__mainMenu-open" data-svg="img/burger_icon.svg"></button>
+        </div>
+        <div class="rmwidget"></div>
+        <div id="header__mainMenu-toggle">
+            <div class="header__mainMenu-toggle_top">
+                <div class="header__mainMenu-toggle_left">
+                    <ul>
+                        <li>
+                            <a href="">О нас <span style="color: rgba(163, 5, 48, 1)">v</span></a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"
+                  >Услуги <span style="color: rgba(163, 5, 48, 1)">v</span></a
+                >
+              </li>
+              <li><a href="#">Online </a></li>
+                        <li><a href="#">Event </a></li>
+                        <li><a href="#">Space </a></li>
+                        <li><a href="#">Pr </a></li>
+                        <li><a href="#">Digital </a></li>
+                    </ul>
+                </div>
+                <div class="header__mainMenu-toggle_right">
+                    <ul>
+                        <li>
+                            <a href="#"><span style="font-weight: 400; font-style: normal"
+                    >Войти </span
+                  >→</a
+                >
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="#">Vimeo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__mainMenu-toggle_bottom">
+                <div class="header__mainMenu-toggle_bottom-left">
+                    <a href="#">Проекты</a>
+                    <a href="/breef.html">Бриф</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="header__mainMenu-toggle_bottom-right">
+                    <a href="#" class="active">Ru </a>
+                    <a href="#">En </a>
+                    <a href="#">Zh</a>
+                </div>
+            </div>
+
+            <div id="search">
+                <input type="text" placeholder="Поиск" />
+                <button>→</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="service_main">
+            <div class="service_main_slide EVENT">
+                <span>EVENT</span>
+                <p>
+                    В организации мероприятий мы любим сложные <br />задачи, которые требуют свежего креатива и продуманной логистики. Мы специализируемся на мероприятиях различного формата и масштаба в онлайн и оффлайн.
+                </p>
+                <img class="EVENT1" src="img/овал_event.svg" />
+                <img class="EVENT2" src="img/овал_event.svg" />
+                <img class="EVENT3" src="img/овал_event.svg" />
+            </div>
+            <div class="service_main_slide ONLINE">
+                <span>ONLINE</span>
+                <p>
+                    Проведение онлайн-мероприятий для больших охватов. Презентации, конференции и лончи. Отличная техническая и контент-команда, режиссура, сервисы для регистрация участников и подробная аналитика.
+                </p>
+                <img class="ONLINE1" src="img/01_online.svg" />
+                <img class="ONLINE2" src="img/01_online.svg" />
+            </div>
+            <div class="service_main_slide SPACE">
+                <span>SPACE</span>
+                <p>
+                    Пространственные коммуникации, погружающие потребителя в мир бренда — актуальное направление современного маркетинга и коммуникаций. Возможность представить ценности, эстетику бренда и сам продукт через различные, материалы, контент и активности.
+                </p>
+                <img class="SPACE1" src="img/прямоугольник_space.svg" />
+            </div>
+            <div class="service_main_slide DIGITAL">
+                <span>DIGITAL</span>
+                <p>
+                    Deep – креативное digital-агентство, которое выросло из digital-направления Eventum Premo в отдельную боевую единицу. Наша команда запустила успешные кампании с такими брендами как: S7 Airlines, Mercedes-Benz, Asics, Acer, МКБ, Kaspersky, Калашников и
+                    др. Ознакомиться со всеми проектами на сайте креативного digital агентства
+                    <a rel="noopener noreferrer" target="_blank" href="https://deep.click/">Deep</a
+            >
+          </p>
+          <img src="img/круг_digital.svg" class="DIGITAL1" />
+          <img src="img/круг_контур_digital.svg" class="DIGITAL2" />
+        </div>
+        <div class="service_main_slide PR">
+          <span>PR</span>
+          <p>
+            Если нужно продвигать имидж компании, наладить контакты со СМИ,
+            блогерами, заявить о себе в интернет-пространстве или выстроить
+            внешние и внутренние коммуникации, PR-команда Eventum Premo всегда
+            здесь, чтобы помочь вам сделать это.
+          </p>
+
+          <img src="img/круги_pr.svg" class="PR1" />
+        </div>
+        <div class="service_main_bg">
+          <img src="img/cloud_услуги2.png" />
+        </div>
+        <div class="EVENT_mobile">
+            <span>EVENT</span>
+            <p>
+                В организации мероприятий мы любим сложные <br />задачи, которые требуют свежего креатива и продуманной логистики. Мы специализируемся на мероприятиях различного формата и масштаба в онлайн и оффлайн.
+            </p>
+        </div>
+        <div class="ONLINE_mobile">
+            <span>ONLINE</span>
+            <p>
+                Проведение онлайн-мероприятий для больших охватов. Презентации, конференции и лончи. Отличная техническая и контент-команда, режиссура, сервисы для регистрация участников и подробная аналитика.
+            </p>
+        </div>
+        <div class="SPACE_mobile">
+            <span>SPACE</span>
+            <p>
+                Пространственные коммуникации, погружающие потребителя в мир бренда — актуальное направление современного маркетинга и коммуникаций. Возможность представить ценности, эстетику бренда и сам продукт через различные, материалы, контент и активности.
+            </p>
+        </div>
+        <div class="DIGITAL_mobile">
+            <span>DIGITAL</span>
+            <p>
+                Deep – креативное digital-агентство, которое выросло из digital-направления Eventum Premo в отдельную боевую единицу. Наша команда запустила успешные кампании с такими брендами как: S7 Airlines, Mercedes-Benz, Asics, Acer, МКБ, Kaspersky, Калашников и
+                др. Ознакомиться со всеми проектами на сайте креативного digital агентства
+                <a rel="noopener noreferrer" target="_blank" href="https://deep.click/">Deep</a
+        >
+      </p>
+        </div>
+        <div class="PR_mobile">
+            <span>PR</span>
+            <p>
+                Если нужно продвигать имидж компании, наладить контакты со СМИ,
+                блогерами, заявить о себе в интернет-пространстве или выстроить
+                внешние и внутренние коммуникации, PR-команда Eventum Premo всегда
+                здесь, чтобы помочь вам сделать это.
+              </p>
+        </div>
+      </section>
+      <section class="service_category">
+        <div class="service_category-title">КАТЕГОРИИ</div>
+        <ul class="service_category-table">
+          <li class="active"><a href="#">ALL</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">ONLINE EVENT</a></li>
+                    <li><a href="#">DIGITAL</a></li>
+                    <li><a href="#">SPACE</a></li>
+                    <li><a href="#">PR</a></li>
+                    </ul>
+                    <div class="service_category_list">
+                        <div class="service_category_list-block">
+                            <div class="service_category_list-block-content">
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/acer.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi cirq3.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">
+                                            AUDI E-TRON EVENING SHOW
+                                        </div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi cosmoscow.jpeg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi urgant.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audia6.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/s7-320neo.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_category_list-block">
+                            <div class="service_category_list-block-content">
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/acer.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi cirq3.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">
+                                            AUDI E-TRON EVENING SHOW
+                                        </div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi cosmoscow.jpeg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audi urgant.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/audia6.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service_category-item">
+                                    <div class="service_category-item_img">
+                                        <img src="img/s7-320neo.jpg" />
+                                    </div>
+                                    <div class="main_list-item_bottom">
+                                        <div class="service_category-item_name">ЭКО АССОЦИАЦИЯ</div>
+                                        <div class="service_category-item_categorys">
+                                            <p class="service_category-item_category">HIRING</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="service_category_list_Info"></p>
+        </section>
+        <div class="service_companies_title">
+            КЛИЕНТЫ
+        </div>
+        <section class="service_companies">
+
+            <div class="service_companies-block">
+                <img src="img/logo comps/acer.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/amway.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/audi.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/bacardi.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/bmw.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/Sberbank_Logo_2020.svg" />
+            </div>
+
+            <div class="service_companies-block">
+                <img src="img/logo comps/jaguar.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/kia.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/leroy.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/mersedes.svg" />
+            </div>
+            <div class="service_companies-block">
+                <img src="img/logo comps/pfizer.svg" />
+            </div>
+
+            <div class="service_companies-block">
+                <a href="/single.html"> <img src="img/logo comps/s7.svg" /></a>
+            </div>
+        </section>
+        <section class="main_search">
+            <input type="text" placeholder="Поиск" />
+            <button>→</button>
+        </section>
+        <section class="main_socials">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+
+                <li><a href="#">Instagram</a></li>
+
+                <li><a href="#">Vimeo</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Behance</a></li>
+
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="#">УСЛУГИ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul>
+                    <li><a href="#">Online event</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Space</a></li>
+                    <li><a href="#">Pr</a></li>
+                    <li><a href="#">Digital</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="#">КОМПАНИЯ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul>
+                    <li><a href="#">Миссия</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">HR</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Музыка</a></li>
+                    <li><a href="#">Тесты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Мерч</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/breef.html">Бриф</a></li>
+                    <li><a href="#">Фрилансерам</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col">
+            <div class="footer_col-left">
+                <a href="#">КОНТАКТЫ</a>
+            </div>
+            <div class="footer_col-right">
+                <ul class="footer_contacts">
+                    <li>
+                        <span>EMAIL</span>
+                        <a href="mailto:go@eventum-premo.ru">go@eventum-premo.ru</a>
+                    </li>
+                    <li>
+                        <span>WHATSAPP, TELEGRAM</span>
+                        <a href="tel:+7 495 785 8446">+7 495 785 8446</a>
+                    </li>
+                    <li>
+                        <span>PHONE </span>
+                        <a href="tel:+7 495 785 8446">+7 495 785 8446</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_col footer_dats">
+            <span>2003</span>
+            <div class="footer_dats-glob">
+                EVENTUM PREMO <br /> MOSCOW <br /> ©
+                <span data-svg="img/world.svg"></span>
+            </div>
+            <span>2021</span>
+        </div>
+        <div class="global_status">
+            <div class="global_status_arrow">
+                >
+            </div>
+            <div class="global_status_main">
+                <p>14 Online</p>
+                <span>54 Offline</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/simpleParallax.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+
+</html>
