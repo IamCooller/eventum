@@ -1042,11 +1042,11 @@ main {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     opacity: 0;
-    animation: animation_140_1 2s ease infinite;
-    -webkit-animation: animation_140_1 2s ease infinite;
+    animation: animation_140_13 2s ease infinite;
+    -webkit-animation: animation_140_13 2s ease infinite;
 }
 
-@-webkit-keyframes animation_140_1 {
+@-webkit-keyframes animation_140_13 {
     0%,
     85.71428571428572% {
         opacity: 0;
@@ -4052,7 +4052,7 @@ div.add_email_checked::after {
         font-size: 15px;
     }
     .main_list-item_bottom {
-        margin-bottom: 15px;
+        padding-bottom: 15px;
     }
     .main_STRESS_left,
     .main_STRESS_right {
