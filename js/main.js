@@ -21,8 +21,36 @@ $(document).ready(function() {
         $(".global_status_main").toggleClass('openGlobal');
         $(this).toggleClass('flip');
     });
+    $('.main_allProjects-top').slick({
+        arrows: false,
+        slidesToShow: 3,
+        variableWidth: true,
+        dots: false,
+        responsive: [{
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+            }
+        }, ]
+    });
+    $('.main_allProjects-bottom').slick({
+        arrows: false,
+        slidesToShow: 3,
+        variableWidth: true,
+        dots: false,
+        responsive: [{
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+            }
+        }, ]
+    });
     if ($(window).width() > 770) {
-        var imageLeft = document.querySelector('.main_allProjects-top'),
+        /* var imageLeft = document.querySelector('.main_allProjects-top'),
             imageRight = document.querySelector('.main_allProjects-bottom');
 
         new simpleParallax(imageLeft, {
@@ -32,18 +60,11 @@ $(document).ready(function() {
         new simpleParallax(imageRight, {
             orientation: 'right',
             overflow: true
-        });
+        }); */
 
     } else {
 
-        $('.main_allProjects-top').slick({
-            arrows: false,
-            dots: false
-        });
-        $('.main_allProjects-bottom').slick({
-            arrows: false,
-            dots: false
-        });
+
         $('.single_RESPECTS_lists').slick({
             arrows: false,
             dots: false,

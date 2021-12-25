@@ -11,6 +11,20 @@ body {
     zoom: 1.5;
 }
 
+.slider_wrap * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slider-item img {
+    max-width: 100%;
+}
+
 
 /* ////////////////////////////////// */
 
@@ -24,8 +38,12 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: relative;
-    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0px;
+    background: #0f0f0f;
+    z-index: 2;
 }
 
 .global_status {
@@ -145,10 +163,8 @@ header {
 .header__logo {
     max-width: 80px;
     width: 100%;
-    position: fixed;
     z-index: 9;
-    top: 15px;
-    left: 20px;
+    margin-left: 20px;
 }
 
 .header__menu {
@@ -161,7 +177,6 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     grid-gap: 55px;
-    padding-left: 80px;
 }
 
 .header__menu li {
@@ -175,6 +190,10 @@ header {
     font-family: 'Graphik', sans-serif;
     color: rgba(170, 170, 170, 1);
     text-decoration: none;
+}
+
+.header__mainMenu {
+    margin-right: 20px;
 }
 
 .header__menu li a:hover {
@@ -201,10 +220,8 @@ header {
     border: none;
     outline: none;
     padding: 0;
-    position: fixed;
+    position: relative;
     z-index: 9;
-    top: 15px;
-    right: 20px;
     cursor: pointer;
 }
 
@@ -517,6 +534,7 @@ header {
 
 main {
     padding: 0 20px;
+    margin-top: 75px;
 }
 
 .main_list {
@@ -1317,7 +1335,7 @@ main {
     display: flex;
     position: relative;
     grid-gap: 20px;
-    width: 110vw;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -1718,6 +1736,7 @@ main {
 .main_search button span {
     position: relative;
     top: -1px;
+    line-height: 0;
 }
 
 .main_search button:hover {
@@ -2650,6 +2669,7 @@ footer {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     overflow: hidden;
+    max-width: 407px;
 }
 
 .service_category-item_img img {
@@ -3371,27 +3391,23 @@ div.add_email_checked::after {
     }
     main {
         padding: 0 10px;
+        margin-top: 50px;
     }
     .header__menu,
     .header__music {
         display: none;
     }
     .header__logo {
-        left: 10px;
-        top: 10px;
         max-width: 50px;
     }
     #header__mainMenu-open {
-        right: 10px;
         max-width: 50px;
-        top: 10px;
     }
     header {
         position: fixed;
         background-color: rgba(15, 15, 15, 0.95);
         border-color: rgb(255, 255, 255);
         z-index: 10;
-        width: 100vw;
     }
     .main_list-top,
     .main_list-bottom {
