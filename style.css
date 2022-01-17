@@ -1081,6 +1081,18 @@ main {
     }
 }
 
+@-webkit-keyframes animation_140_1 {
+    0%,
+    85.71428571428572% {
+        opacity: 0;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes animation_140_1 {
     0%,
     85.71428571428572% {
@@ -2722,6 +2734,9 @@ footer {
 }
 
 .service_category-item_category {
+    position: absolute;
+    top: 0;
+    right: 20px;
     background-color: rgba(68, 68, 68, 0.25);
     border-radius: 72px;
     border-width: 0px;
@@ -3905,6 +3920,7 @@ div.add_email_checked::after {
     .DIGITAL_mobile,
     .PR_mobile {
         will-change: transform;
+        -webkit-transform: translate3d(0px, 0px, 0px);
         transform: translate3d(0px, 0px, 0px);
         display: block;
         text-align: left;
@@ -3988,6 +4004,8 @@ div.add_email_checked::after {
     }
     .main_list-item_bottom {
         overflow: hidden;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .service_category_list_Info {
